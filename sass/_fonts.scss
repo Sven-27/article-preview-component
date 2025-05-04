@@ -1,0 +1,28 @@
+.text-preset-1{
+  font-weight: $fw-700;
+  font-size: $fs-20;
+  line-height: $lh-130;
+  letter-spacing: $ls-25px;
+}
+
+.text-preset-2-medium{
+  font-weight: $fw-500;
+  font-size: $fs-13;
+  line-height: $lh-140;
+  letter-spacing: $ls-12;
+}
+
+.text-preset-2-bold{
+  font-weight: $fw-700;
+  font-size: $fs-13;
+  line-height: $lh-140;
+  letter-spacing: $ls-12;
+}
+
+.text-preset-3{
+  font-weight: $fw-400;
+  font-size: $fs-13;
+  line-height: $lh-140;
+  letter-spacing: $ls-25;
+  text-transform: $ff-uppercase;
+}

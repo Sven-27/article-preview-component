@@ -21,8 +21,9 @@ $fw-700: 700; // bold
 $fw-800: 800; // super bold
 
 // letter spacing
+$ls-25px: 0.25px;
 $ls-12: 0.12%;
-$ls-25: 0.25%;
+$ls-25: 25%;
 
 // line height
 $lh-130: 130%;
@@ -39,3 +40,6 @@ $s-700: 3.5rem;
 $s-800: 4rem;
 $s-1300: 13rem;
 $s-2000: 20rem;
+
+// font uppercase
+$ff-uppercase: uppercase;
