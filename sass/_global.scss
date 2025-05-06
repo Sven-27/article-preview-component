@@ -9,5 +9,21 @@
 body{
   font-family: $ff-manrope;
   min-height: 100vh;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: $grey-200;
 
+  .container{
+    max-width: 327px;
+
+    @media only screen and (width >= 650px){
+      max-width: 608px;
+      display: flex;
+    }
+
+    @media only screen and (width >= 1024px) {
+      max-width: 730px;
+    }
+  }
 }

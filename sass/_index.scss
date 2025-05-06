@@ -11,7 +11,8 @@
 }
 
 article{
-  padding: $s-500 0 $s-300 $s-400;
+  // padding: $s-500 0 $s-300 $s-400;
+  // max-width: 327px;
 
   h1{
     max-width: 20ch;
@@ -20,5 +21,18 @@ article{
   & > p{
     margin: $s-400 0 $s-600;
     max-width: 33ch;
+  }
+
+  .author-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // max-width: 327px !important;
+
+    .author-image{
+      width: 2.5rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
   }
 }
