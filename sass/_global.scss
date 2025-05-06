@@ -16,6 +16,9 @@ body{
 
   .container{
     max-width: 327px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 40px 40px -10px rgba(201, 213, 225, .5);
 
     @media only screen and (width >= 650px){
       max-width: 608px;

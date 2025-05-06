@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 .text-preset-1 {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 130%;
   letter-spacing: 0.25px;
   color: #48556A;
@@ -49,6 +49,9 @@ body {
 }
 body .container {
   max-width: 327px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 40px 40px -10px rgba(201, 213, 225, 0.5);
 }
 @media only screen and (width >= 650px) {
   body .container {
@@ -70,9 +73,17 @@ body .container {
 .image-container img {
   width: 100%;
   object-fit: contain;
-  object-position: 0 -20px;
+  object-position: 0 -15px;
 }
 
+article {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 article h1 {
   max-width: 20ch;
 }
@@ -83,12 +94,33 @@ article > p {
 article .author-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding-inline: 2rem;
 }
-article .author-container .author-image {
+article .author-container .author-image--container .author-image {
   width: 2.5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
+}
+article .author-container .author-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+article .author-container .author-text p {
+  line-height: 0.8;
+}
+article .author-container .icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #ECF2F8;
+}
+article .author-container .icon-container .share-icon {
+  width: 1.2rem;
 }
 
 /*# sourceMappingURL=output.css.map */
