@@ -75,6 +75,26 @@ body .container {
   object-fit: contain;
   object-position: 0 -15px;
 }
+@media only screen and (width >= 650px) {
+  .image-container img {
+    object-fit: cover;
+    object-position: -55px 0;
+    min-height: 100%;
+  }
+}
+@media only screen and (width >= 1024px) {
+  .image-container img {
+    object-position: -25px 0;
+  }
+}
+@media only screen and (width >= 650px) {
+  .image-container {
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+    aspect-ratio: unset;
+  }
+}
 
 article {
   padding-top: 2rem;
@@ -87,9 +107,29 @@ article {
 article h1 {
   max-width: 20ch;
 }
+@media only screen and (width >= 650px) {
+  article h1 {
+    max-width: 23ch;
+  }
+}
+@media only screen and (width >= 1024px) {
+  article h1 {
+    max-width: 28ch;
+  }
+}
 article > p {
   margin: 2rem 0 3rem;
   max-width: 33ch;
+}
+@media only screen and (width >= 650px) {
+  article > p {
+    max-width: 38ch;
+  }
+}
+@media only screen and (width >= 650px) {
+  article > p {
+    max-width: 50ch;
+  }
 }
 article .author-container {
   display: flex;
@@ -109,7 +149,7 @@ article .author-container .author-text {
   flex: 1;
 }
 article .author-container .author-text p {
-  line-height: 0.8;
+  line-height: 0.9;
 }
 article .author-container .icon-container {
   width: 2.5rem;
@@ -121,6 +161,19 @@ article .author-container .icon-container {
 }
 article .author-container .icon-container .share-icon {
   width: 1.2rem;
+}
+@media only screen and (width >= 650px) {
+  article .author-container {
+    padding-inline: unset;
+  }
+}
+@media only screen and (width >= 650px) {
+  article {
+    display: flex;
+    flex: 0.6;
+    align-items: flex-start;
+    padding-inline: 2rem;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
