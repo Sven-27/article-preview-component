@@ -107,7 +107,7 @@ article{
       gap: 1.5rem;
       height: 100%;
       padding-inline: $s-400;
-      z-index: -1;
+      z-index: 1;
 
       .social-icons{
         flex: 1;
@@ -115,6 +115,16 @@ article{
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        img{
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+        @media only screen and (width >= 650px) {
+          width: 100%;
+          justify-content: center;
+          gap: .8rem;
+        }
       }
 
       .btn-container{
@@ -135,6 +145,29 @@ article{
                 filter: saturate(0) brightness(0) invert(1);
               }
           }
+          @media only screen and (width >= 650px) {
+            display: none;
+          }
+      }
+      @media only screen and (width >= 650px) {
+        width: 248px;
+        height: 55px;
+        border-radius: 10px;
+        inset: unset;
+        justify-content: center;
+        top: -80px;
+        right: -110px;
+
+        &:before{
+          content: '';
+          width: 1.5rem;
+          height: 1.5rem;
+          position: absolute;
+          background: $grey-900;
+          bottom: -20px;
+          left: 50%;
+          transform: rotate(45deg) translateX(-70%);
+        }
       }
     }
   }

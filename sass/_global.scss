@@ -23,6 +23,7 @@ body{
     @media only screen and (width >= 650px){
       max-width: 608px;
       display: flex;
+      overflow: unset;
     }
 
     @media only screen and (width >= 1024px) {
