@@ -8,7 +8,6 @@
   <link href="./css/output.css" rel="stylesheet" type="text/css">
   
   <title>Frontend Mentor | Article preview component</title>
-
 </head>
 <body>
   <div class="container">
@@ -32,19 +31,19 @@
           <date class="text-preset-2-medium">28 Jun 2020</date>
         </div>
         <div class="icon-container">
-          <button class="share-button">
+          <button class="share-button toggle-share">
             <img src="./images/icon-share.svg" alt="Share" class="share-icon icon">
           </button>
         </div>
-        <div class="social-container">
+        <div class="none social-container" id="socials">
           <p class="text-preset-3">share</p>
           <div class="social-icons">
-            <img src="./images/icon-facebook.svg" alt="Facebook" class="facebook-icon icon">
-            <img src="./images/icon-twitter.svg" alt="Twitter" class="twitter-icon icon">
-            <img src="./images/icon-pinterest.svg" alt="Pinterest" class="pinterest-icon icon">
+            <a href="https://facebook.com" target="_blank"><img src="./images/icon-facebook.svg" alt="Facebook" class="facebook-icon icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="./images/icon-twitter.svg" alt="Twitter" class="twitter-icon icon"></a>
+            <a href="https://pinterest.com" target="_blank"><img src="./images/icon-pinterest.svg" alt="Pinterest" class="pinterest-icon icon"></a>
           </div>
            <div class="btn-container">
-            <button class="share-button">
+            <button class="share-button remove-share">
               <img src="./images/icon-share.svg" alt="Share" class="share-icon icon">
             </button>
           </div>
@@ -52,5 +51,6 @@
       </div>
     </article>
   </div>
+  <script defer src="./js/script.js"></script>
 </body>
 </html>
